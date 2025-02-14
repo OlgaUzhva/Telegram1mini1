@@ -90,8 +90,9 @@
         };
 
         function showSection(sectionId) {
-            document.querySelector(".container").classList.add("hidden");
-            document.getElementById(sectionId).classList.remove("hidden");
+    document.querySelectorAll(".container").forEach(el => el.classList.add("hidden"));
+    document.getElementById(sectionId).classList.remove("hidden");
+}
         }
     </script>
 <div class="container hidden" id="razbory">

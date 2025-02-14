@@ -31,7 +31,7 @@
         }
         .menu {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             padding: 15px;
             background-color: #222;
             position: fixed;
@@ -62,13 +62,11 @@
     </div>
     
     <div class="container hidden" id="razbory">
-        
         <img src="https://olgauzhva.github.io/Telegram1mini1/photo_2025-02-14_01.46.09.jpeg" alt="Разборы" width="80%">
         <button class="button" onclick="window.location.href='https://t.me/your_razbory_channel'">Перейти в канал</button>
     </div>
     
     <div class="container hidden" id="efiry" style="height: auto; min-height: 100vh; overflow-y: auto;">
-        
         <img src="https://olgauzhva.github.io/Telegram1mini1/photo_2025-02-14_02.28.13.jpeg" alt="Эфир 1" width="80%">
         <button class="button" onclick="window.location.href='https://t.me/+UjF9MezN_og4NDdi'">Смотреть эфир 1</button>
         <img src="https://olgauzhva.github.io/Telegram1mini1/photo_2025-02-14_02.28.18.jpeg" alt="Эфир 2" width="80%">
@@ -76,18 +74,16 @@
     </div>
     
     <div class="container hidden" id="keysy">
-        
         <img src="https://olgauzhva.github.io/Telegram1mini1/photo_2025-02-14_02.01.10.jpeg" alt="Кейсы" width="80%">
         <button class="button" onclick="window.location.href='https://t.me/olgauzhvareviews'">Отзывы</button>
     </div>
     
     <div class="container hidden" id="proryv">
-        
         <img src="https://olgauzhva.github.io/Telegram1mini1/photo_2025-02-14_02.09.38.jpeg" alt="Прорыв" width="80%">
         <button class="button" onclick="window.location.href='https://teletype.in/@olgauzhva/9Jlo_7DkqHh'">Программа</button>
     </div>
     
-    <div class="menu" style="position: fixed; bottom: 0; width: 100%;">
+    <div class="menu">
         <button onclick="showSection('razbory')">
             <img src="https://olgauzhva.github.io/Telegram1mini1/1.png" alt="Разборы"> <span style='font-family: Arial, sans-serif; font-weight: bold; text-transform: uppercase;'>РАЗБОРЫ</span>
         </button>
@@ -104,7 +100,7 @@
 
     <script>
         const tg = window.Telegram.WebApp;
-        tg.expand(); // Разворачивает WebApp
+        tg.expand();
 
         window.onload = function() {
             document.body.style.background = tg.themeParams.bg_color || "#f8f8f8";

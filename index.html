@@ -49,16 +49,36 @@
             cursor: pointer;
         }
         .menu img {
-            width: 24px;
-            height: 24px;
+            width: 32px;
+            height: 32px;
             margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="main">
         <img src="https://olgauzhva.github.io/Telegram1mini1/photo_2025-02-14_01.45.42.jpeg" alt="Стратегия прорыва" width="80%">
         <button class="button" onclick="window.location.href='https://t.me/UzhvaOlga'">Получить разбор</button>
+    </div>
+    
+    <div class="container hidden" id="razbory">
+        <h2>Разборы</h2>
+        <p>Скоро здесь появится контент.</p>
+    </div>
+    
+    <div class="container hidden" id="efiry">
+        <h2>Эфиры</h2>
+        <p>Скоро здесь появится контент.</p>
+    </div>
+    
+    <div class="container hidden" id="keysy">
+        <h2>Кейсы</h2>
+        <p>Скоро здесь появится контент.</p>
+    </div>
+    
+    <div class="container hidden" id="mentorstvo">
+        <h2>Менторство</h2>
+        <p>Скоро здесь появится контент.</p>
     </div>
     
     <div class="menu">
@@ -90,7 +110,7 @@
         };
 
         function showSection(sectionId) {
-            document.querySelector(".container").classList.add("hidden");
+            document.querySelectorAll(".container").forEach(el => el.classList.add("hidden"));
             document.getElementById(sectionId).classList.remove("hidden");
         }
     </script>
